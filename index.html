@@ -16,6 +16,9 @@
 
   <!-- Fonts -->
   <script src="https://kit.fontawesome.com/1e2d8cfaa1.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -38,9 +41,11 @@
       </div>
     </div>
   </nav>
-  <div class="container">
-    <h1 class="display-4">Guten Tag!</h1>
-  </div>
+  <br>
+  <h1 class="display-4 text-center" id="title"></h1>
+
+  <br>
+
   <div class="container" id="projects">
     <h1 class="display-6 text-center">Projects</h1>
     <div class="row">
@@ -49,7 +54,7 @@
           <div class="card-body">
             <h4 class="card-title">Fast Vote Machine</h4>
             <h6 class="card-subtitle text-muted">Real-time votes</h6>
-            <p class="card-text">Create simple, public votes with real-time updates.</p>
+            <p class="card-text">Create and share simple, public votes with real-time updates.</p>
             <h6 class="card-subtitle text-muted">Used technologies</h6>
             <ul>
               <li>ASP.NET</li>
@@ -87,6 +92,32 @@
         </div>
       </div>
 
+
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Remind Me Bot</h4>
+            <h6 class="card-subtitle text-muted">Discord Bot</h6>
+            <p class="card-text">A Discord bot that lets you create private reminders.</p>
+            <h6 class="card-subtitle text-muted">Used technologies</h6>
+            <ul>
+              <li>Java</li>
+              <li>Springboot</li>
+              <li>Maven</li>
+              <li>JDA (Java Discord API)</li>
+            </ul>
+            <a href="https://github.com/hertelukas/RemindMeBot" class="btn btn-primary" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Github</a>
+            <a href="https://discord.com/oauth2/authorize?client_id=923226956814749697&scope=bot+applications.commands"
+              class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-discord"></i> Add
+              to discord</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- Second row -->
+    <div class="row">
       <div class="col-sm-4">
         <div class="card">
           <div class="card-body">
@@ -106,10 +137,7 @@
           </div>
         </div>
       </div>
-    </div>
-    <br>
-    <!-- Second row -->
-    <div class="row">
+
       <div class="col-sm-4">
         <div class="card">
           <div class="card-body">
@@ -134,21 +162,18 @@
       <div class="col-sm-4">
         <div class="card">
           <div class="card-body">
-            <h4 class="card-title">Remind Me Bot</h4>
-            <h6 class="card-subtitle text-muted">Discord Bot</h6>
-            <p class="card-text">A discord bot that sends you private reminders.</p>
+            <h4 class="card-title">Display</h4>
+            <h6 class="card-subtitle text-muted">Setup your Waveshare display</h6>
+            <p class="card-text">A webserver for configuring your Waveshare display. Updates the display accordingly.
+            </p>
             <h6 class="card-subtitle text-muted">Used technologies</h6>
             <ul>
-              <li>Java</li>
-              <li>Springboot</li>
-              <li>Maven</li>
-              <li>JDA (Java Discord API)</li>
+              <li>Python</li>
+              <li>Node.js</li>
+              <li>HTML/CSS</li>
             </ul>
-            <a href="https://github.com/hertelukas/RemindMeBot" class="btn btn-primary" target="_blank"
+            <a href="https://github.com/hertelukas/display" class="btn btn-primary" target="_blank"
               rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Github</a>
-            <a href="https://discord.com/oauth2/authorize?client_id=923226956814749697&scope=bot+applications.commands"
-              class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-discord"></i> Add
-              to discord</a>
           </div>
         </div>
       </div>
@@ -167,20 +192,39 @@
       <div class="col"></div>
       <div class="col">
         <a href="https://discord.com/users/515595203781066753" target="_blank" rel="noopener noreferrer"><i
-          class="fa-brands fa-discord display-4 me-3"></i></a>
+            class="fa-brands fa-discord display-4 me-3"></i></a>
       </div>
       <div class="col">
         <a href="https://github.com/hertelukas" target="_blank" rel="noopener noreferrer"><i
-          class="fa-brands fa-github display-4 me-3"></i></a>
+            class="fa-brands fa-github display-4 me-3"></i></a>
       </div>
       <div class="col">
         <a href="mailto:contact@lukas-hertel.de" target="_blank" rel="noopener noreferrer"><i
-          class="fa-regular fa-envelope display-4 me-3"></i></a>
+            class="fa-regular fa-envelope display-4 me-3"></i></a>
       </div>
       <div class="col"></div>
     </div>
   </div>
   <br>
 </body>
+
+<script>
+  let title = document.getElementById("title");
+
+  const h = new Date().getHours();
+
+  if (h > 21) {
+    title.textContent = "Good night!";
+  } else if (h > 18) {
+    title.textContent = "Good evening!";
+  } else if (h > 12) {
+    title.textContent = "Good afternoon!";
+  } else if (h > 6) {
+    title.textContent = "Good morning!";
+  } else {
+    title.textContent = "Good night!";
+  }
+
+</script>
 
 </html>
