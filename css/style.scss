@@ -1,0 +1,51 @@
+@import "bootstrap/scss/bootstrap";
+
+$fg: #ebdbb2;
+$fg2: #d5c4a1;
+$fg3: #bdae93;
+$bg: #282828;
+$bg1: #3c3836;
+$bg2: #504945;
+$bg3: #665c54;
+$red: #cc241d;
+$gray: #a89984;
+
+
+$theme-colors: (
+  "primary":    $fg,
+  "secondary":  $bg,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $red,
+  "light":      $light,
+  "dark":       $blue
+);
+
+$body-color: $fg;
+$body-bg: $bg;
+$font-family-base: 'Red Hat Mono', monospace;
+
+$navbar-dark-color: $fg;
+$navbar-dark-hover-color: $fg3;
+$navbar-dark-brand-color: $fg;
+$navbar-dark-brand-hover-color: $fg3;
+
+$card-bg: $bg1;
+
+$link-color: $fg;
+$link-hover-color: $fg3;
+
+h6{
+    color: $gray;
+}
+
+.navbar-dark{
+    background-color: $bg1;
+}
+
+.btn-primary{
+    color: $bg !important;
+}
+
+@import "bootstrap/scss/bootstrap"
