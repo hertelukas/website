@@ -221,16 +221,14 @@
 
   const h = new Date().getHours();
 
-  if (h > 21) {
-    title.textContent = "Good night!";
-  } else if (h > 18) {
+  if (h > 18) {
     title.textContent = "Good evening!";
   } else if (h > 12) {
     title.textContent = "Good afternoon!";
   } else if (h > 6) {
     title.textContent = "Good morning!";
   } else {
-    title.textContent = "Good night!";
+    title.textContent = "Good evening!";
   }
 
 </script>
