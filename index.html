@@ -1,85 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <title>Lukas</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <title>Lukas</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+  </head>
 
-  <!-- Fonts -->
-  <script src="https://kit.fontawesome.com/1e2d8cfaa1.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap" rel="stylesheet">
-
-  <!-- Stylesheet -->
-  <link href="css/style.css" type="text/css" rel="stylesheet">
-</head>
-
-<body>
-  <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
-      <a href="#" class="navbar-brand"><i class="fa-solid fa-terminal"></i></a>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-        <ul class="navbar-nav mb-2 mb-lg-0 r">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
+  <body>
+    <div class="container">
+      <h1>Under Maintenance</h1>
     </div>
-  </nav>
-  <br>
-  <h1 class="display-4 text-center" id="title"></h1>
-
-  <br>
-
-  <div class="container text-center" id="about">
-    <h1 class="display-6">About me</h1>
-    <p>I'm a computer science student at TUM</p>
-  </div>
-
-  <div class="container text-center" id="contact">
-    <h1 class="display-6">Contact</h1>
-    <div class="row">
-      <div class="col"></div>
-      <div class="col">
-        <a href="https://discord.com/users/515595203781066753" target="_blank" rel="noopener noreferrer"><i
-            class="fa-brands fa-discord display-4 me-3"></i></a>
-      </div>
-      <div class="col">
-        <a href="https://github.com/hertelukas" target="_blank" rel="noopener noreferrer"><i
-            class="fa-brands fa-github display-4 me-3"></i></a>
-      </div>
-      <div class="col">
-        <a href="mailto:contact@lukas-hertel.de" target="_blank" rel="noopener noreferrer"><i
-            class="fa-regular fa-envelope display-4 me-3"></i></a>
-      </div>
-      <div class="col"></div>
-    </div>
-  </div>
-  <br>
-</body>
-
-<script>
-  let title = document.getElementById("title");
-
-  const h = new Date().getHours();
-
-  if (h > 18) {
-    title.textContent = "Good evening!";
-  } else if (h > 12) {
-    title.textContent = "Good afternoon!";
-  } else if (h > 6) {
-    title.textContent = "Good morning!";
-  } else {
-    title.textContent = "Good evening!";
-  }
-
-</script>
-
+  </body>
 </html>
